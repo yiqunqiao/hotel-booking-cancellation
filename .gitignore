@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+.env
+.env.*
+*.log
+hotel_bookings.csv
+shared_data/
+outputs/
+*.joblib
+*.pkl
+*.npz
