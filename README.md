@@ -4,7 +4,7 @@ A COMP90049 team project comparing hotel-booking cancellation models, feature ab
 
 ## Source
 
-Copied from the team repository [YuxuanLin050309/IML-Assignment2](https://github.com/YuxuanLin050309/IML-Assignment2), main commit `03c6ebb6d3a5cb1d4981a9b604ab092faab841c1`. This is a separate private source snapshot; original notebook attribution is retained.
+Copied from the team repository [YuxuanLin050309/IML-Assignment2](https://github.com/YuxuanLin050309/IML-Assignment2). This is a separate private source snapshot; original notebook attribution is retained.
 
 ## Notebooks
 
