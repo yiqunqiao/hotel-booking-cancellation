@@ -13,3 +13,5 @@ outputs/
 *.joblib
 *.pkl
 *.npz
+.venv/
+data/*.xz
