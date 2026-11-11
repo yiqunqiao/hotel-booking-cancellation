@@ -1,0 +1,320 @@
+{
+  "decision_tree_configuration": [
+    {
+      "Model": "Decision Tree",
+      "criterion": "entropy",
+      "max_depth": 20,
+      "min_samples_leaf": 10,
+      "Threshold": 0.35,
+      "Selection_metric": "Validation F1",
+      "Train_rows": 83815,
+      "Validation_rows": 18237,
+      "Test_rows": 17338,
+      "n_features": 24,
+      "random_state": 42
+    }
+  ],
+  "neural_network_rq2_results": [
+    {
+      "train_hotel": "City Hotel",
+      "evaluate_hotel": "City Hotel",
+      "evaluation_type": "in-hotel",
+      "hidden_units": 32,
+      "n_features": 23,
+      "Threshold": 0.35,
+      "n_train": 55561,
+      "n_val": 12427,
+      "n_test": 11342,
+      "train_cancel_rate": 0.4168391497633232,
+      "val_cancel_rate": 0.4402510662267643,
+      "test_cancel_rate": 0.3941985540469053,
+      "Accuracy": 0.7623875859636748,
+      "Precision": 0.6694009919877909,
+      "Recall": 0.784835607246701,
+      "F1": 0.7225368063420159,
+      "ROC_AUC": 0.8733611660142901
+    },
+    {
+      "train_hotel": "City Hotel",
+      "evaluate_hotel": "Resort Hotel",
+      "evaluation_type": "transfer",
+      "hidden_units": 32,
+      "n_features": 23,
+      "Threshold": 0.35,
+      "n_train": 55561,
+      "n_val": 12427,
+      "n_test": 5996,
+      "train_cancel_rate": 0.4168391497633232,
+      "val_cancel_rate": 0.4402510662267643,
+      "test_cancel_rate": 0.2808539026017345,
+      "Accuracy": 0.7726817878585723,
+      "Precision": 0.5858747993579454,
+      "Recall": 0.6502375296912114,
+      "F1": 0.6163805235012665,
+      "ROC_AUC": 0.8380000132205766
+    },
+    {
+      "train_hotel": "Resort Hotel",
+      "evaluate_hotel": "City Hotel",
+      "evaluation_type": "transfer",
+      "hidden_units": 64,
+      "n_features": 23,
+      "Threshold": 0.4,
+      "n_train": 28254,
+      "n_val": 5810,
+      "n_test": 11342,
+      "train_cancel_rate": 0.2766687902597862,
+      "val_cancel_rate": 0.2790017211703958,
+      "test_cancel_rate": 0.3941985540469053,
+      "Accuracy": 0.7316169987656498,
+      "Precision": 0.6816908581614464,
+      "Recall": 0.5987474837843882,
+      "F1": 0.637532745891879,
+      "ROC_AUC": 0.7842710120666045
+    },
+    {
+      "train_hotel": "Resort Hotel",
+      "evaluate_hotel": "Resort Hotel",
+      "evaluation_type": "in-hotel",
+      "hidden_units": 64,
+      "n_features": 23,
+      "Threshold": 0.4,
+      "n_train": 28254,
+      "n_val": 5810,
+      "n_test": 5996,
+      "train_cancel_rate": 0.2766687902597862,
+      "val_cancel_rate": 0.2790017211703958,
+      "test_cancel_rate": 0.2808539026017345,
+      "Accuracy": 0.8363909272848565,
+      "Precision": 0.685097419694576,
+      "Recall": 0.7725653206650831,
+      "F1": 0.7262070890315379,
+      "ROC_AUC": 0.9077119754185414
+    }
+  ],
+  "decision_tree_final_results": [
+    {
+      "Model": "Decision Tree",
+      "max_depth": 20,
+      "min_samples_leaf": 10,
+      "Threshold": 0.35,
+      "Accuracy": 0.7667551043949706,
+      "Precision": 0.6311343023978134,
+      "Recall": 0.8253452477660439,
+      "F1": 0.7152914671923402,
+      "ROC_AUC": 0.8751462505501669
+    }
+  ],
+  "neural_network_final_results": [
+    {
+      "Model": "Neural Network",
+      "hidden_units": 16,
+      "Threshold": 0.45,
+      "Accuracy": 0.8064367285730765,
+      "Precision": 0.7202896269478987,
+      "Recall": 0.7434606011372867,
+      "F1": 0.7316917173009274,
+      "ROC_AUC": 0.893381331316036
+    }
+  ],
+  "decision_tree_rq1_results": [
+    {
+      "Setting": "A: all 24 features",
+      "n_features": 24,
+      "max_depth": 20,
+      "min_samples_leaf": 10,
+      "Threshold": 0.35,
+      "n_test": 17338,
+      "Cancel_rate": 0.3550005767677933,
+      "Accuracy": 0.7667551043949706,
+      "Precision": 0.6311343023978134,
+      "Recall": 0.8253452477660439,
+      "F1": 0.7152914671923402,
+      "ROC_AUC": 0.8751462505501669
+    },
+    {
+      "Setting": "B: without booking history",
+      "n_features": 21,
+      "max_depth": 15,
+      "min_samples_leaf": 1,
+      "Threshold": 0.3,
+      "n_test": 17338,
+      "Cancel_rate": 0.3550005767677933,
+      "Accuracy": 0.7529703541354251,
+      "Precision": 0.6074626865671642,
+      "Recall": 0.8596263200649878,
+      "F1": 0.7118735284224689,
+      "ROC_AUC": 0.8636266330037187
+    }
+  ],
+  "logistic_regression_final_results": [
+    {
+      "Model": "Logistic Regression",
+      "C": 10,
+      "Threshold": 0.3,
+      "Accuracy": 0.7525666166801246,
+      "Precision": 0.6197201181152908,
+      "Recall": 0.7842404549147035,
+      "F1": 0.6923407917383821,
+      "ROC_AUC": 0.8593610267644699
+    }
+  ],
+  "logistic_regression_configuration": [
+    {
+      "Model": "Logistic Regression",
+      "Regularisation": "L2",
+      "C": 10,
+      "Threshold": 0.3,
+      "Selection_metric": "Validation F1",
+      "Train_rows": 83815,
+      "Validation_rows": 18237,
+      "Test_rows": 17338
+    }
+  ],
+  "neural_network_rq1_results": [
+    {
+      "Setting": "A: all features",
+      "n_features": 24,
+      "hidden_units": 16,
+      "Threshold": 0.45,
+      "n_test": 17338,
+      "Accuracy": 0.8064367285730765,
+      "Precision": 0.7202896269478987,
+      "Recall": 0.7434606011372867,
+      "F1": 0.7316917173009274,
+      "ROC_AUC": 0.893381331316036
+    },
+    {
+      "Setting": "B: without history",
+      "n_features": 21,
+      "hidden_units": 32,
+      "Threshold": 0.4,
+      "n_test": 17338,
+      "Accuracy": 0.7995155150536394,
+      "Precision": 0.6948930597992143,
+      "Recall": 0.7759545085296506,
+      "F1": 0.7331900521952717,
+      "ROC_AUC": 0.889010722074159
+    }
+  ],
+  "neural_network_configuration": [
+    {
+      "Model": "Neural Network",
+      "Hidden_units": 16,
+      "Threshold": 0.45,
+      "Selection_metric": "Validation F1; default cutoff then threshold grid",
+      "Activation": "relu",
+      "Solver": "adam",
+      "Learning_rate_init": 0.001,
+      "Max_iter": 1000,
+      "Iterations": 157,
+      "Stopped_before_cap": true,
+      "Reached_max_iter": false,
+      "Convergence_warning": false,
+      "Convergence_warning_messages": NaN,
+      "Final_training_loss": 0.3399912944726409,
+      "Early_stopping": false,
+      "Tolerance": 0.0001,
+      "N_iter_no_change": 10,
+      "Random_state": 42,
+      "Train_rows": 83815,
+      "Validation_rows": 18237,
+      "Test_rows": 17338
+    }
+  ],
+  "naive_bayes_final_results": [
+    {
+      "Model": "Naive Bayes (CategoricalNB)",
+      "n_bins": 20,
+      "alpha": 0.01,
+      "Threshold": 0.3,
+      "Accuracy": 0.7402814626831238,
+      "Precision": 0.6221532091097308,
+      "Recall": 0.6835093419983753,
+      "F1": 0.6513896415576372,
+      "ROC_AUC": 0.8145966813239864
+    }
+  ],
+  "decision_tree_rq2_results": [
+    {
+      "Train_hotel": "City Hotel",
+      "Test_hotel": "City Hotel",
+      "Type": "in-hotel",
+      "n_train": 55561,
+      "n_val": 12427,
+      "n_test": 11342,
+      "Cancel_rate": 0.3941985540469053,
+      "n_features": 23,
+      "max_depth": 20,
+      "min_samples_leaf": 50,
+      "Threshold": 0.4,
+      "Accuracy": 0.7471345441721037,
+      "Precision": 0.6461257976298997,
+      "Recall": 0.7926638335942742,
+      "F1": 0.7119325030132584,
+      "ROC_AUC": 0.8652851551522659,
+      "Baseline_ROC_AUC": 0.5,
+      "ROC_AUC_above_baseline": 0.3652851551522659
+    },
+    {
+      "Train_hotel": "City Hotel",
+      "Test_hotel": "Resort Hotel",
+      "Type": "transfer",
+      "n_train": 55561,
+      "n_val": 12427,
+      "n_test": 5996,
+      "Cancel_rate": 0.2808539026017345,
+      "n_features": 23,
+      "max_depth": 20,
+      "min_samples_leaf": 50,
+      "Threshold": 0.4,
+      "Accuracy": 0.771180787191461,
+      "Precision": 0.5737937559129612,
+      "Recall": 0.7203087885985748,
+      "F1": 0.6387572406529752,
+      "ROC_AUC": 0.8577468722319417,
+      "Baseline_ROC_AUC": 0.5,
+      "ROC_AUC_above_baseline": 0.3577468722319417
+    },
+    {
+      "Train_hotel": "Resort Hotel",
+      "Test_hotel": "City Hotel",
+      "Type": "transfer",
+      "n_train": 28254,
+      "n_val": 5810,
+      "n_test": 11342,
+      "Cancel_rate": 0.3941985540469053,
+      "n_features": 23,
+      "max_depth": 15,
+      "min_samples_leaf": 10,
+      "Threshold": 0.4,
+      "Accuracy": 0.7203315111973198,
+      "Precision": 0.6336694793167318,
+      "Recall": 0.6886602549765153,
+      "F1": 0.660021436227224,
+      "ROC_AUC": 0.806675719113011,
+      "Baseline_ROC_AUC": 0.5,
+      "ROC_AUC_above_baseline": 0.3066757191130109
+    },
+    {
+      "Train_hotel": "Resort Hotel",
+      "Test_hotel": "Resort Hotel",
+      "Type": "in-hotel",
+      "n_train": 28254,
+      "n_val": 5810,
+      "n_test": 5996,
+      "Cancel_rate": 0.2808539026017345,
+      "n_features": 23,
+      "max_depth": 15,
+      "min_samples_leaf": 10,
+      "Threshold": 0.4,
+      "Accuracy": 0.8280520346897932,
+      "Precision": 0.6636591478696742,
+      "Recall": 0.7862232779097387,
+      "F1": 0.7197608045664583,
+      "ROC_AUC": 0.896871378112895,
+      "Baseline_ROC_AUC": 0.5,
+      "ROC_AUC_above_baseline": 0.3968713781128949
+    }
+  ]
+}
