@@ -1,0 +1,27 @@
+{
+  "preprocessing": {
+    "status": "passed",
+    "seconds": 8.14,
+    "code_cells": 22
+  },
+  "logistic_regression": {
+    "status": "passed",
+    "seconds": 19.15,
+    "code_cells": 21
+  },
+  "naive_bayes": {
+    "status": "passed",
+    "seconds": 57.43,
+    "code_cells": 19
+  },
+  "decision_tree": {
+    "status": "passed",
+    "seconds": 67.92,
+    "code_cells": 9
+  },
+  "neural_network": {
+    "status": "passed",
+    "seconds": 984.18,
+    "code_cells": 12
+  }
+}
